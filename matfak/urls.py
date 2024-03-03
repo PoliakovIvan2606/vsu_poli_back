@@ -17,9 +17,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
-from people.views import PersonView
+from people.views import PersonView, index
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('person/', PersonView.as_view())
+    path('person/', PersonView.as_view()),
+    path('oleg/', index)
 ]
