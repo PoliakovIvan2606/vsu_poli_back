@@ -1,0 +1,34 @@
+{
+    "coors": "",
+    "subgroup": "",
+    "schedule": [
+        "numerator": [
+            "mondey": [
+                "name_item": "",
+                "teacher": "",
+                "start": "",
+                "end": ""
+            ],
+            "tuesday": {
+                "name": "",
+                "teacher": "",
+                "start": "",
+                "end": ""
+            }
+        ],
+        "denominator": [
+            "mondey": {
+              "name": "",
+              "teacher": "",
+              "start": "",
+              "end": ""
+            },
+            "tuesday": {
+              "name": "",
+              "teacher": "",
+              "start": "",
+              "end": ""
+            }
+        ]
+    ]
+}

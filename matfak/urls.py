@@ -17,10 +17,11 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
-from people.views import PersonView, index
+from people.views import PersonView, NewsView, index
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('person/', PersonView.as_view()),
+    path('news/', NewsView.as_view()),
     path('oleg/', index)
 ]
