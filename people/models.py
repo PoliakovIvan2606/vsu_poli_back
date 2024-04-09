@@ -10,6 +10,7 @@ class News(models.Model):
     title = models.CharField(max_length=500)
     text = models.TextField()
     created_date = models.DateTimeField(auto_now_add=True)
+    image = models.ImageField(upload_to='', null=True)
 
     def __str__(self):
         return self.title
@@ -17,3 +18,4 @@ class News(models.Model):
 class Departments(models.Model):
     title = models.CharField(max_length=500)
     text = models.TextField()
+    image = models.ImageField(upload_to='', null=True)

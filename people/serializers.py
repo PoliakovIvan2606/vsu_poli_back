@@ -6,7 +6,10 @@ class PersonSerializer(serializers.ModelSerializer):
         model = Person
         fields = '__all__'
 
+
+
 class NewSerializer(serializers.ModelSerializer):
+    # href = LinksSerializer()
     class Meta:
         model = News
         fields = '__all__'

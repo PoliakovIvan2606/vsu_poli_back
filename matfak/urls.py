@@ -16,7 +16,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from django.conf.urls.static import static
 
+from matfak import settings
 from people.views import PersonView, NewsView, index
 
 urlpatterns = [
@@ -25,3 +27,6 @@ urlpatterns = [
     path('news/', NewsView.as_view()),
     path('oleg/', index)
 ]
+
+if settings.DEBUG:
+    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
